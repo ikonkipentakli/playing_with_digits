@@ -1,0 +1,11 @@
+n = input('Введите число n: ')
+p = int(input('Введите число p: '))
+
+def counter(number_one, number_two):
+    sum = 0
+    for i in range(len(number_one)):
+        sum = sum + int(number_one[i])**number_two
+        number_two += 1
+    return sum
+    
+print(counter(n,p))
