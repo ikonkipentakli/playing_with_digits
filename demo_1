@@ -3,9 +3,14 @@ p = int(input('Введите число p: '))
 
 def counter(number_one, number_two):
     sum = 0
+    k = 0
     for i in range(len(number_one)):
         sum = sum + int(number_one[i])**number_two
         number_two += 1
-    return sum
+    if sum % int(number_one) == 0:
+        k = int(sum / int(number_one))
+        return f'{sum} = {number_one}*{k}'
+    else:
+        return '-1'
     
 print(counter(n,p))
