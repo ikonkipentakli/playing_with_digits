@@ -13,4 +13,5 @@ def counter(number_one, number_two):
     else:
         return '-1'
     
-print(counter(n,p))# Привет! Редактируй этот код.
+print(counter(n,p))
+# Привет! Редактируй этот код.
